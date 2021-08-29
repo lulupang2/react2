@@ -45,7 +45,7 @@
 
 .loginbox input {
     font-family: 'Wemakeprice-SemiBold';
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 input::placeholder {
@@ -59,8 +59,7 @@ input::placeholder {
     box-shadow: 0 1px rgba(0, 0, 0, 0.2);
     color: #FFF;
     font-weight: bold;
-    width: 15vw;
-    max-width: 300px;
+    width: 280px;
     margin-bottom: 20px;
 }
 #userid:focus{
@@ -73,13 +72,12 @@ input::placeholder {
     box-shadow: 0 1px rgba(0, 0, 0, 0.2);
     color: #FFF;
     font-weight: bold;
-    width: 15vw;
-    max-width: 300px;
+    width: 280px;
 }
 #passwd:focus{
     outline: none;
 }
-#btn {
+.btn {
     font-family: 'Wemakeprice-SemiBold';
     font-size: 1.1rem;
     align-items: center;
@@ -96,11 +94,19 @@ input::placeholder {
     margin: 0 auto;
     font-weight: bold;
 }
+.btn:hover {
+  background-color: white;
+  color: lightcoral;
+  border: 0;
+
+}
 
 /* 배경 */
 .boxbg{
+  position: fixed;
   display:block;
   width:100%;
+  z-index: 999;
 }
 .boxbg{
   list-style-type:none;
@@ -138,12 +144,12 @@ input::placeholder {
   background:rgba(255,255,255,.2);
 }
 .boxbgs {
-  animation:animate 15s linear 1s infinite;
+  animation:animate 20s linear 15s infinite;
 }
 
 @keyframes animate{
   from{
-    transform: translateY(+1500%) rotate(180deg)
+    transform: translateY(+1500%) rotate(170deg)
   }
   to{
     transform: translateY(-150%)
