@@ -6,7 +6,7 @@ const dbconf = {
     port: 3306,
     user: 'tester',
     password: '1',
-    database: ''
+    database: 'node_1'
 }
 const app = express();
 app.use(session({  

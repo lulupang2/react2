@@ -1,71 +1,152 @@
-    .main {
-        display: grid;
-        place-items: center;
-        text-align: center;
-        padding: 1em;
-        min-width: 100vw;
-        max-width: 640px;
-    }
+@font-face {
+    font-family: 'Wemakeprice-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Wemakeprice-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.qqq {
+    padding: 0;
+    margin: 0 auto;
+    
+}
+
+.mainbg {
+    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vmin;
+    overflow: hidden;
+}
 
 .box {
-        display: grid;
-        place-items: center;
-        background-color: #ff6655;
-        width: 30vmax;
-        padding-top: 4em;
-        padding-bottom: 4em;
-        border-radius: 40px;
-    }
-    .box input::placeholder {
-        color: #fff;
-    }
-    input:focus{
-        outline: none;
-        caret-color: #FFF;
-        background-color: #FFF;
-        color: #000;
-    }
-    .box input[type=text] {
-        border: 1px solid #fff;
-        background-color: #ff6655;
-        padding-left: 10px;
-        border-radius: 70px;
-        width: 40vmin;
-        height: 50px;
-        color: #fff;
-    }
-    .box input[type=password] {
-        border: 1px solid #fff;
-        background-color: #ff6655;
-        padding-left: 10px;
-        border-radius: 70px;
-        width: 40vmin;
-        height: 50px;
-        top: 50%;
-        color: #fff;
-        margin-top: 10px;
-    }
-    #btn {
-        margin-top: 1vh;
-        border-radius: 10px;
-        color: #ff6655;
-        font-weight: bolder;
-        width: 17.5vw;
-        height: 35px;
-        border: 0;
-        background-color: #fff;
-    }
-    #btn:hover{
-        cursor: pointer;
-    }
-    h1 {
-        color: #686;
-        text-transform: uppercase;
-        font-size: 2em;
-        font-weight: 100;
-    }
-    @media (min-width: 640px) {
-        main {
-            max-width: none;
-        }
-    }
+    
+    max-width: 80vw;
+    width: 1024px;
+    height: 60vmin;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 10px rgba(255,0,0,0.8);
+    border-radius: 50px;
+
+
+    
+}
+.wrapbox {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    justify-content:center;
+}
+
+.loginbox input {
+    font-family: 'Wemakeprice-SemiBold';
+    font-size: 1.3rem;
+}
+
+input::placeholder {
+    color: #FFF;
+    size: 2rem;
+}
+#userid {
+    border: 0;
+    padding: 15px;
+    background: none;
+    box-shadow: 0 1px rgba(0, 0, 0, 0.2);
+    color: #FFF;
+    font-weight: bold;
+    width: 15vw;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+#userid:focus{
+    outline: none;
+}
+#passwd {
+    border: 0;
+    padding: 15px;
+    background: none;
+    box-shadow: 0 1px rgba(0, 0, 0, 0.2);
+    color: #FFF;
+    font-weight: bold;
+    width: 15vw;
+    max-width: 300px;
+}
+#passwd:focus{
+    outline: none;
+}
+#btn {
+    font-family: 'Wemakeprice-SemiBold';
+    font-size: 1.1rem;
+    align-items: center;
+    clear: both;
+    display: block;
+    border: 0;
+    max-width: 250px;
+    padding: 15px;
+    width: 15vw;
+    background: none;
+    border-radius: 25px;
+    border: 1px solid #FFF;
+    color: #FFF;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+/* 배경 */
+.boxbg{
+  display:block;
+  width:100%;
+}
+.boxbg{
+  list-style-type:none;
+}
+.boxbg1
+{
+  position:fixed;
+  left:10%;
+  height:30px;
+  width:30px;
+  background:rgba(255,255,255,.2);
+}
+.boxbg2
+{
+  position:fixed;
+  left:30%;
+  height:45px;
+  width:45px;
+  background:rgba(255,255,255,.2);
+}
+.boxbg3
+{
+  position:fixed;
+  left:50%;
+  height:70px;
+  width:70px;
+  background:rgba(255,255,255,.2);
+}
+.boxbg4
+{
+  position:fixed;
+  left:80%;
+  height:20px;
+  width:20px;
+  background:rgba(255,255,255,.2);
+}
+.boxbgs {
+  animation:animate 15s linear 1s infinite;
+}
+
+@keyframes animate{
+  from{
+    transform: translateY(+1500%) rotate(180deg)
+  }
+  to{
+    transform: translateY(-150%)
+      rotate(360deg)
+  }
+}

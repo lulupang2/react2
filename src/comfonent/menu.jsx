@@ -8,12 +8,12 @@ export const Menu = (props) => {
                 <ul>
                     <li><NavLink className="nav-link" to="/home">HOME2</NavLink></li>
                     <li><NavLink className="nav-link" to="/Login">Login</NavLink></li>
-                    <li><NavLink className="nav-link" to="#">게시판(없음)</NavLink></li>
+                    <li><NavLink className="nav-link" to="/Board">게시판(없음)</NavLink></li>
 
                     <li>
-                        <label for="dropchk"><span id="dropspan">드롭다운</span></label>
+                        <label htmlFor="dropchk"><span id="dropspan">드롭다운</span></label>
                         <input type="checkbox" id="dropchk" />
-                        <ul class="drops">
+                        <ul className="drops">
 
                             <li><NavLink to="#">Drop</NavLink></li>
                             <li><NavLink to="#">Down</NavLink></li>
@@ -22,6 +22,8 @@ export const Menu = (props) => {
 
 
                     </li>
+                    <li><NavLink to="#" id="mobiles">모바일아직안댐</NavLink></li>
+
                 </ul>
             </div>
         </div>
