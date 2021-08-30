@@ -12,13 +12,11 @@ export const Server = props => {
     <BrowserRouter>
       <Menu />
       <Switch>
-      
       <Route path="/Home" component={Home}></Route>
         <Route path="/Login" component={Login}></Route>
         <Route path="/" component={Index}></Route>
       <Contents />
       </Switch>
-      
     </BrowserRouter>
   )
 }

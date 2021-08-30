@@ -23,6 +23,7 @@ a {
   padding: 0;
   margin: 0px auto;
   z-index: 999;
+  min-width: 1600px;
   
 }
 .temp {
@@ -89,10 +90,10 @@ a {
     flex-direction: column;
   }
 
-#dropchk {position: absolute; opacity: 0; height: 0px;}    
+#dropchk {position: absolute; opacity: 100; height: 0px;}    
 #dropchk:checked + .drops {
-  height: 300px;     
-  z-index: 999;
+  height: 300px;
+  transition: 0.5s ease-in-out;
 } 
 
 

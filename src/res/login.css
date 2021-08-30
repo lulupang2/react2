@@ -114,7 +114,7 @@ input::placeholder {
 .boxbg1
 {
   position:fixed;
-  left:10%;
+  left:5%;
   height:30px;
   width:30px;
   background:rgba(255,255,255,.2);
@@ -122,7 +122,7 @@ input::placeholder {
 .boxbg2
 {
   position:fixed;
-  left:30%;
+  left:15%;
   height:45px;
   width:45px;
   background:rgba(255,255,255,.2);
@@ -130,7 +130,7 @@ input::placeholder {
 .boxbg3
 {
   position:fixed;
-  left:50%;
+  left:85%;
   height:70px;
   width:70px;
   background:rgba(255,255,255,.2);
@@ -138,21 +138,20 @@ input::placeholder {
 .boxbg4
 {
   position:fixed;
-  left:80%;
+  left:95%;
   height:20px;
   width:20px;
   background:rgba(255,255,255,.2);
 }
 .boxbgs {
-  animation:animate 20s linear 15s infinite;
+  animation:animate 12s linear 0.1s infinite;
 }
 
 @keyframes animate{
   from{
-    transform: translateY(+1500%) rotate(170deg)
+    transform: translateY(+1500%) rotate(1deg)
   }
   to{
-    transform: translateY(-150%)
-      rotate(360deg)
+    transform: translateY(-1500%) rotate(360deg)
   }
 }

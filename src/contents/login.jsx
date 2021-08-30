@@ -45,6 +45,11 @@ const Login = () => {
                             <button className="btn" disabled={true}>회원가입</button>
                     </form>
                 </div>
+                <div className="smallfont">
+                    1.회원가입 온클릭 이벤트 발생<br />
+                    2.Transform으로 div 전체 넓이로 증가<br />
+                    3.Login창은 사이즈를 줄이던가 overflow hidden처리 하던가
+                </div>
 
 
                 {/* <div className="joinbox wrapbox">
