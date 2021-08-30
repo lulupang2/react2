@@ -5,6 +5,7 @@ import { Home } from './contents/home';
 import { BrowserRouter , Route, Switch } from "react-router-dom";
 import Login from './contents/Login';
 import Index from './contents/Index'
+import App from './contents/temp/App'
 //import './comfonent/mongo'
 
 export const Server = props => {
@@ -14,7 +15,8 @@ export const Server = props => {
       <Switch>
       <Route path="/Home" component={Home}></Route>
         <Route path="/Login" component={Login}></Route>
-        <Route path="/" component={Index}></Route>
+        <Route path="/Index" component={Index}></Route>
+        <Route path="/App" component={App}></Route>
       <Contents />
       </Switch>
     </BrowserRouter>
